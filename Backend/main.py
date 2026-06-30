@@ -18,7 +18,7 @@ ALLOWED_ORIGINS = [_origins_env]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origins=["https://chatbot-seven-beryl-54.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
