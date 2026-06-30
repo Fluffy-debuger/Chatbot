@@ -1,0 +1,64 @@
+:root {
+  --ink: #14110f;
+  --ink-soft: #1f1b18;
+  --ink-border: #2c2723;
+  --paper: #faf7f2;
+  --paper-dim: #f0ebe2;
+  --paper-border: #e3dcd0;
+  --text-main: #211c17;
+  --text-dim: #6f655a;
+  --text-on-ink: #f1ece3;
+  --text-on-ink-dim: #a89e90;
+  --ember: #d9622b;
+  --ember-hover: #c4541f;
+  --ember-soft: rgba(217, 98, 43, 0.12);
+  --danger: #b3422c;
+  --radius: 10px;
+  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Source Serif 4', Georgia, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-ui);
+  background: var(--paper);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+textarea, input {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--ember-soft);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
