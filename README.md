@@ -23,6 +23,12 @@ The application also includes user authentication using Clerk and conversation p
 
 ---
 
+## Image Generation 
+
+![imagine](images/imagine.png)
+
+---
+
 # Features
 
 - AI Chat using **kimi-k2.5**
