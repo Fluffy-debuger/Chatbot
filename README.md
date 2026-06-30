@@ -25,7 +25,7 @@ The application also includes user authentication using Clerk and conversation p
 
 # Features
 
-- AI Chat using **kimi-k2.7-code**
+- AI Chat using **kimi-k2.5**
 - Streaming responses using Server-Sent Events (SSE)
 - Vision support (image + question)
 - Image generation using **flux-2-klein-9b**
@@ -57,7 +57,7 @@ The application also includes user authentication using Clerk and conversation p
 ### Chat + Vision
 
 ```
-kimi-k2.7-code
+kimi-k2.5
 ```
 
 ### Image Generation
