@@ -13,12 +13,10 @@ app = FastAPI(
     title="Demo Chatbot using CallMissed API",
     description="Multi-Agent Chatbot",
 )
-_origins_env = os.getenv("FRONTEND_URL", "")
-ALLOWED_ORIGINS = [_origins_env]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://chatbot-seven-beryl-54.vercel.app/"],
+    allow_origins=[os.getenv("FRONTEND_URL")],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
