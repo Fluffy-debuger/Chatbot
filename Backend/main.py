@@ -14,10 +14,7 @@ app = FastAPI(
     description="Multi-Agent Chatbot",
 )
 _origins_env = os.getenv("FRONTEND_URL", "")
-ALLOWED_ORIGINS = [o.strip() for o in _origins_env.split(",") if o.strip()] or [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
+ALLOWED_ORIGINS = [_origins_env]
 
 app.add_middleware(
     CORSMiddleware,
